@@ -19,7 +19,9 @@ typedef priority_queue<int> qi;
 typedef priority_queue<pii> qii;
 typedef priority_queue<pii, vii, greater<pii>> qgii;
 
-#define in(a,n) vi a(n); for(int &x:a) cin >> x;
+#define cin(x) int x; cin >> x;
+#define cin2(x,y) int x, y; cin >> x >> y;
+#define in(n,a) vi a(n); for(int &x:a) cin >> x;
 #define out(a) for(int &x:a) cout << x << " "; cout << nl;
 #define fo(i,a,b) for(int i = a; i < b; ++i)
 #define rfo(i,a,b) for(int i = a; i >= b; --i)
