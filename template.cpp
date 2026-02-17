@@ -78,10 +78,10 @@ template <class T> void _print(set <T> v) {cerr << "[ "; for (T i : v) {_print(i
 template <class T> void _print(multiset <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << " ";} cerr << "]";}
 template <class T, class V> void _print(map <T, V> v) {cerr << "[ "; for (auto i : v) {_print(i); cerr << " ";} cerr << "]";}
 
-#define INF 1e18
-const int mod = 1e9+7;
+#define INF 1000000000000000000
+const int mod = 1000000007;
 const int mod1 = 998244353;
-const int N = 2e5+7;
+const int N = 200005;
 
 void solve(){
 	
