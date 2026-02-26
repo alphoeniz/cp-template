@@ -11,11 +11,7 @@ class SegTree
 
 public:
 	SegTree(int n){
-		if (n && (!(n & (n-1)))){
-            seg.resize(2 * n);
-        }else{
-            seg.resize(4 * (1LL << (63 - __builtin_clzll(n))));
-        }
+		seg.resize(4*n+1);
 	}
 
 	void build(int idx, int low, int hi, vector<int> &a){
