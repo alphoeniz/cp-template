@@ -6,15 +6,23 @@ using namespace std;
 #define int long long
 
 // --- TYPES ---
+using ll = long long;
 using ull = unsigned long long;
+using ld = long double;
 using pii = pair<int, int>;
+using pll = pair<ll, ll>;
+using pdd = pair<double, double>;
 using vi = vector<int>;
+using vll = vector<ll>;
 using si = set<int>;
 using mii = map<int, int>;
 using vii = vector<pii>;
 using vvi = vector<vi>;
 using vsi = vector<si>;
 using sii = set<pii>;
+using qi = priority_queue<int>;
+using qii = priority_queue<pii>;
+using qgii = priority_queue<pii, vii, greater<pii>>;
 
 // --- MACROS ---
 #define in(n,a) vi a(n); for(int &x:a) cin >> x;
@@ -44,7 +52,7 @@ using sii = set<pii>;
 
 #define pY {cout << "YES\n"; return;}
 #define pN {cout << "NO\n"; return;}
-void show(bool x) {cout << ((x) ? "YES":"NO") << nl; return;}
+void show (bool x) {cout << ((x) ? "YES":"NO") << nl; return;}
 
 // --- DEBUG ---
 #ifndef ONLINE_JUDGE
@@ -54,9 +62,10 @@ void show(bool x) {cout << ((x) ? "YES":"NO") << nl; return;}
 #endif
 
 void _print(int t) {cerr << t;}
+// void _print(ll t) {cerr << t;}
 void _print(string t) {cerr << t;}
 void _print(char t) {cerr << t;}
-void _print(long double t) {cerr << t;}
+void _print(ld t) {cerr << t;}
 void _print(double t) {cerr << t;}
 void _print(ull t) {cerr << t;}
 void _print(bool t){cerr << t;}
@@ -71,16 +80,17 @@ template <class T> void _print(vector <T> v) {cerr << "[ "; for (T i : v) {_prin
 template <class T> void _print(set <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << " ";} cerr << "]";}
 template <class T> void _print(multiset <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << " ";} cerr << "]";}
 template <class T, class V> void _print(map <T, V> v) {cerr << "[ "; for (auto i : v) {_print(i); cerr << " ";} cerr << "]";}
+template <class T, class V> void _print(unordered_map <T, V> v) {cerr << "[ "; for (auto i : v) {_print(i); cerr << " ";} cerr << "]";}
 
 // --- CONSTANTS ---
-constexpr long long INF = 1e18;       // Use for long long
+constexpr ll INF = 1e18;       // Use for long long
 constexpr int INF32 = 1e9 + 7; // Use for 32-bit int
 constexpr int mod = 1000000007;
 constexpr int mod1 = 998244353;
 constexpr int N = 1000007;
 
 void solve(){
-
+    
 }
 
 int32_t main(){
@@ -89,6 +99,7 @@ int32_t main(){
     freopen("output.txt", "w", stdout);
     freopen("error.txt", "w", stderr);
 	#endif
+    
     cin.tie(0)->sync_with_stdio(0);
     int T; cin >> T;
     while(T--){
